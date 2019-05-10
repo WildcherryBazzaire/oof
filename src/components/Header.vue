@@ -16,7 +16,7 @@
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
           <v-btn flat color="grey" class="px-4" v-on="on">
-            <span>Registration</span>
+            <span>Registration</span><v-icon>expand_more</v-icon>
           </v-btn>
           </template>
         <v-list>
@@ -32,7 +32,7 @@
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
           <v-btn flat color="grey" v-on="on">
-          <span>Honors</span>
+          <span>Honors</span><v-icon>expand_more</v-icon>
           </v-btn>
           </template>
         <v-list>
@@ -60,8 +60,8 @@
     data: () => ({
       drawer: false,
       menu: [
-        {title:"math", icon: "some_Icon", link:"/math"},
-        {title:"langauges", icon: "some_Icon", link:"/languages"},
+        {title:"Math", icon: "some_Icon", link:"/math"},
+        {title:"Languages", icon: "some_Icon", link:"/languages"},
       ],
 
       menu2: [
