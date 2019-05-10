@@ -20,14 +20,15 @@
                 <v-flex xs12>
 
                   <v-card-title>
-                    <span class="headline" style="margin: auto;">Cumulative GPA of 3.0+</span>
+                    <span class="headline" style="margin: auto;">Select GPA</span>
+                    <span class="subheader text-xs-center" style="margin: auto" >*GPA must be 3.0+ to be eligible</span>
                   </v-card-title>
 
                 </v-flex>
 
                 <v-flex xs12 class="pa-2">
 
-                  <p class="title text-xs-center">{{gpa}}</p>
+                  <v-text-field  id="hecker "class="title text-xs-center" v-model="gpa" single-line type="number" style="width:60px;margin:auto" step="0.01">{{gpa}}</v-text-field>
 
                   <v-slider
                     v-model="gpa"
@@ -167,4 +168,5 @@
     transform: translate3D(0, 4px, 0);
     box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12); 
   }
+
 </style>
