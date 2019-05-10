@@ -1,5 +1,5 @@
 <template>
-    <v-container class="grey lighten-3">
+    <v-container class="grey lighten-3 px-3">
 
         <v-layout row justify-start wrap>
 
@@ -8,11 +8,11 @@
                 <v-container column>
 
                     <v-flex xs12>
-                        <p class="display-1">About PHN</p>
+                        <p class="display-1">About WHS tools</p>
                     </v-flex>
 
                     <v-flex xs12>
-                        <p class="headline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga obcaecati qui doloremque enim soluta tenetur cum esse dolorem quas libero voluptatibus est eligendi cumque saepe quia, eveniet aliquam consectetur odit!</p>
+                        <p class="headline">Registering for your next classes can be difficult and confusing, or maybe you don't know what you need to get the honors you want. WHStools is a tool that helps Waipahu High School students determine how to better their future, whether that is providing class descriptions or honors requirements.</p>
                     </v-flex>
 
                 </v-container>
