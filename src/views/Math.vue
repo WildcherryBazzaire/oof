@@ -3,41 +3,28 @@
 <v-container>
 
         <v-layout row justify-center align-center wrap>
-            <v-flex xs12>
+            <v-flex >
                 <v-subheader id="language title" class="title mt-1">Math</v-subheader>
-            </v-flex>
-            <template v-for="cards in cards">
 
-                <v-flex xs12 md4 lg3 :key="cards.title">
-
-                <v-card class="auto-grow grey lighten-3 mx-5 mt-3" height="20rem" style="overflow:hidden;">
+                <v-card class="auto-grow grey lighten-3 mx-5 mt-3" fluid v-for="cards in cards" :key="cards">
                     
-                        <v-card-title primary-title height="100px">
-                            <h3 class="mb-0 headline">
-                                {{ cards.title }}
-                            </h3>
-                        </v-card-title>
+                    <v-card-title primary-title height="100px">
+                        <h3 class="mb-0 headline">
+                            {{ cards.title }}
+                        </h3>
+                    </v-card-title>
 
-                        <v-subheader class="pt-0 mt-0">
-                            {{ cards.subheader }}
-                        </v-subheader>
+                    <v-subheader class="pt-0 mt-0">
+                        {{ cards.subheader }}
+                    </v-subheader>
 
-                        <v-card-text class="grow">
-                            <span>hi</span>
-                        </v-card-text>
+                     <v-card-text class="grow">
+                        {{ cards.text }}
+                    </v-card-text>
 
-                        <v-card-actions>
-                            <router-link to="/more" :route="cards" >
-                                <v-btn depressed color="blue lighten-2 white--text">More</v-btn>
-                            </router-link>
-                        </v-card-actions>
-
-                    </v-card>
+                </v-card>
                 
-                </v-flex>
-
-            </template>
-
+            </v-flex>
         </v-layout>
 
     </v-container>
